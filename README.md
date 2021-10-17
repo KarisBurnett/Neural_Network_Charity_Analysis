@@ -15,7 +15,7 @@ Categories with low values in columns such as “APPLICATION_TYPE” and “CLAS
 ## Compiling, Training and Evaluation
 To optimize the model, many different neural networks were run on a few different iterations of the data set. Removing columns the columns“CLASSIFICATION” and “APPLICATION_TYPE” had no significant effect on the model’s accuracy. One variable which did yield an improved accuracy was “ASK_AMT”, the amount of money the applicant had asked for. This variable was left out of our final model.
 
-Adding additional layers and neurons to the model at times hurt the accuracy while at other times offered no significant improvement. This may be because of overfitting. Our original model consisted of 2 layers with 80 and 30 neurons. This was increased to a most of 3 layers with 100, 60 and 30 neurons. The highest accuracy came from using 2 layers with 80 and 40 neurons.
+Adding additional layers and neurons to the model sometimes hurt the accuracy while at other times offered no significant improvement. This may be because of overfitting. Our original model consisted of 2 layers with 80 and 30 neurons. This was increased to a most of 3 layers with 100, 60 and 30 neurons. The highest accuracy came from using 2 layers with 80 and 40 neurons.
 
 The activation function was also changed from relu to a sigmoid function to increase the model’s accuracy. The relu function works well with non-linear data but in this case of a binary target, the sigmoid function performed much better.
 
